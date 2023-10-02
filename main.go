@@ -69,7 +69,7 @@ func printTx(client *rpc.Client, tx common.Hash) {
 		}
 		gasPrice := utils.ValueInGwei(gasString)
 
-		fmt.Printf(utils.GreenString("*** NEW TX DETECTED ***\n"))
+		fmt.Printf(utils.GreenString("\n*** NEW TX DETECTED ***\n"))
 		fmt.Printf(utils.YellowString("TX HASH: "))
 		fmt.Println(transaction["hash"])
 		fmt.Printf(utils.YellowString("FROM: "))
@@ -80,7 +80,7 @@ func printTx(client *rpc.Client, tx common.Hash) {
 		fmt.Printf("%s Gwei\n", gasPrice.String())
 		fmt.Printf(utils.YellowString("ETC: "))
 		fmt.Println(etherValue)
-		fmt.Printf(utils.YellowString("\n--------------------------------------------------------------"))
+		fmt.Printf(utils.YellowString("----------------------------------------------------------------------\n"))
 	} else {
 		return
 	}
