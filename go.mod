@@ -1,4 +1,4 @@
-module github.com/jdgc/eth-mempool-whale-watcher
+module github.com/DRIgnazGortngschirl/etc-mempool-whale-watcher
 
 go 1.15
 

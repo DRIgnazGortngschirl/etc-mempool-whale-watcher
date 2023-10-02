@@ -1,6 +1,6 @@
 package utils
 
-import "github.com/jdgc/eth-mempool-whale-watcher/constants"
+import "github.com/DRIgnazGortngschirl/etc-mempool-whale-watcher/constants"
 
 func RedString(s string) string {
 	return constants.COLOR_RED + s + constants.COLOR_RESET

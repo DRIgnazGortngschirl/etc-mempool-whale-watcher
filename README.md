@@ -1,31 +1,30 @@
 # ETC-mempool-whale-watcher
 
-![Screenshot](https://i.ibb.co/Js6fSFC/2021-07-23-011128-903x402-scrot.png)
+![Screenshot]()
 
 
-listen for large ETC movements in the mempool.
+Listen for ETC movements in the mempool.
 
-This task will monitor pending transactions and report all movements of ETC over a given threshold.
-I built this as a way to play around with gETC but it may be useful as a tool for certain MEV strategies
-or for analytics.
+This container will monitor pending transactions from the mem pool and report all movements of ETC over 
+a given threshold.
 
 ## Usage
 ### Docker
-create a .env file in the root directory and set ```NODE_URL``` to a websocket enabed gETC node url. (example: wss://api-gETC-at.etc-network.info)
+Set ```NODE_URL``` to a websocket (WS) enabed ETC node url. (example: wss://api-geth-at.etc-network.info)
 
 Then run
 ```
-docker-compose up
+docker-compose up -d
 ```
 
 ### local
 ```
-NODE_URL=<websocket gETC node url> go run main.go
+NODE_URL=<websocket ETC node url> go run main.go
 ```
 
 ### Setting the threshold
 
-the env var ```MONITOR_ETC_THRESHOLD``` (denominated in ETC) is checked first and used for the reporting threshold if possible. If absent a default value is used.
+The env var ```MONITOR_ETC_THRESHOLD``` (denominated in ETC) is checked first and used for the reporting threshold if possible. If absent a default of 50 is used.
 
 ## Contributing
 

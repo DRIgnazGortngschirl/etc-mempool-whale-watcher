@@ -4,7 +4,7 @@ import (
 	"log"
 	"math/big"
 
-	"github.com/jdgc/eth-mempool-whale-watcher/constants"
+	"github.com/DRIgnazGortngschirl/etc-mempool-whale-watcher/constants"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 )

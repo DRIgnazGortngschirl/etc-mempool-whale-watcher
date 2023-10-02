@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/jdgc/eth-mempool-whale-watcher/utils"
+	"github.com/DRIgnazGortngschirl/etc-mempool-whale-watcher/utils"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient/gethclient"
@@ -80,7 +80,7 @@ func printTx(client *rpc.Client, tx common.Hash) {
 		fmt.Printf("%s Gwei\n", gasPrice.String())
 		fmt.Printf(utils.YellowString("ETC: "))
 		fmt.Println(etherValue)
-		fmt.Printf(utils.YellowString("------------------------------------------------------"))
+		fmt.Printf(utils.YellowString("\n--------------------------------------------------------------"))
 	} else {
 		return
 	}
