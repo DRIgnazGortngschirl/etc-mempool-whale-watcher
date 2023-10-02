@@ -78,8 +78,9 @@ func printTx(client *rpc.Client, tx common.Hash) {
 		fmt.Println(transaction["to"])
 		fmt.Printf(utils.YellowString("GAS PRICE: "))
 		fmt.Printf("%s Gwei\n", gasPrice.String())
-		fmt.Printf(utils.YellowString("ETH: "))
+		fmt.Printf(utils.YellowString("ETC: "))
 		fmt.Println(etherValue)
+		fmt.Printf(utils.YellowString("------------------------------------------------------"))
 	} else {
 		return
 	}
