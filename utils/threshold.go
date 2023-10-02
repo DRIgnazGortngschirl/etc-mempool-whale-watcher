@@ -15,7 +15,7 @@ const (
 var Threshold *big.Float
 
 func LoadThreshold() {
-	setting := os.Getenv("MONITOR_ETH_THRESHOLD")
+	setting := os.Getenv("MONITOR_ETC_THRESHOLD")
 
 	if setting == "" {
 		log.Printf(RedString("No Threshold value supplied. Defaulting to %d ETH"), DEFAULT)
